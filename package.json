@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "rmdir /s /q build && mkdir build && xcopy src build /E /I /Y"
+    "build": "rimraf build && mkdir build && xcopy src build /E /I /Y"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +12,8 @@
   "description": "",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }
