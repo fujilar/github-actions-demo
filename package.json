@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "echo 'Building the project'"
+    "build": "rmdir /s /q build && mkdir build && xcopy src build /E /I /Y"
   },
   "keywords": [],
   "author": "",
